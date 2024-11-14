@@ -19,11 +19,9 @@ crossbtn.addEventListener('click', () => {
 });
 
 
-// script.js
 document.getElementById('bookNowButton').addEventListener('click', function() {
     window.location.href = "https://api.whatsapp.com/send?phone=919007062180";
 });
-// script.js
 document.getElementById('bookNow').addEventListener('click', function() {
     window.location.href = "https://api.whatsapp.com/send?phone=919007062180";
 });
