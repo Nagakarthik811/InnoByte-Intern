@@ -273,49 +273,48 @@ main {
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;  /* Ensure full height */
+  height: 100%;  
   background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg") no-repeat center center fixed;
-  background-size: cover;  /* Cover the entire background */
+  background-size: cover;  
 }
 
 .carousel {
   position: relative;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-  margin: 26px auto;  /* Center the carousel */
-  width: 100%;  /* Full width */
-  max-width: 100%;  /* Prevent overflow */
+  margin: 26px auto;  
+  width: 100%;  
+  max-width: 100%;  
 }
 
 .carousel-inner {
   position: relative;
   overflow: hidden;
   width: 100%;
-  display: flex;  /* Use flexbox for centering */
-  justify-content: center;  /* Center items */
+  display: flex; 
+  justify-content: center; 
 }
 
 .carousel-item {
-  position: relative;  /* Change to relative for better positioning */
+  position: relative;  
   opacity: 0;
   transition: opacity 0.6s ease-out;
-  width: 100%;  /* Make items full width */
+  width: 100%;  
 }
 
 .carousel-item img {
   display: block;
   height: auto;
   max-width: 100%;
-  margin: 0 auto;  /* Center images */
+  margin: 0 auto;  
 }
 
 .slider {
   position: relative;
-  width: 90%; /* Set to 90% of the parent container */
-   /* Adjust height as needed or set a specific height */
+  width: 90%; 
   overflow: hidden;
-  margin: 0 auto; /* Center the slider */
-  border-radius: 15px; /* Adjust the radius as needed for rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+  margin: 0 auto; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .slides {
@@ -324,10 +323,10 @@ html, body {
 }
 
 .slides img {
-  width: 100%; /* Set each image to fill the slider width */
+  width: 100%; 
   height: 100%;
   flex-shrink: 0;
-  border-radius: 15px; /* Optional: Ensure images also have rounded corners */
+  border-radius: 15px; 
 }
 
 *, *:before, *:after {
@@ -336,7 +335,6 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -344,10 +342,9 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-/* Footer Section */
 .footer  {
-  background-color: #000; /* Black background */
-  color: white; /* White text */
+  background-color: #000; 
+  color: white;
   padding: 40px 20px;
   font-size: 18px;
 }
@@ -398,11 +395,11 @@ html, body {
 }
 
 .footer-section ul li a:hover {
-  color: #f06292; /* Pinkish color for hover effect */
+  color: #f06292;
 }
 
 .btn {
-  background-color: #f06292; /* Pink button */
+  background-color: #f06292; 
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -413,7 +410,7 @@ html, body {
 }
 
 .btn:hover {
-  background-color: #e91e63; /* Darker pink */
+  background-color: #e91e63;
 }
 
 .social-icons {
@@ -580,18 +577,17 @@ html, body {
    
 
 <script>
-  // Include your JavaScript code here
   let currentIndex = 0;
   const slides = document.querySelector('.slides');
   const totalSlides = document.querySelectorAll('.slides img').length;
 
   function showNextSlide() {
       currentIndex = (currentIndex + 1) % totalSlides;
-      const offset = -currentIndex * 100; // Move to the next image
+      const offset = -currentIndex * 100; 
       slides.style.transform = `translateX(${offset}%)`;
   }
 
-  setInterval(showNextSlide, 3000); // Change image every 3 seconds
+  setInterval(showNextSlide, 3000); 
 </script>
 <div id="about">
   <div class="aboutpage" style="display: flex; ">
@@ -626,7 +622,6 @@ html, body {
 </div>
 <footer class="footer" style="margin-top: 10px; ">
   <div class="containe">
-      <!-- Left Column -->
       <div class="footer-section">
           <h2 style="margin-left: 15px; margin-right:40rem;">Kingsukh<br>Guest House</h2>
           <p style="color: white;">
@@ -636,7 +631,6 @@ html, body {
             <button id="bookNowButton" class="but">BOOK NOW</button>
           </a>      </div>
 
-      <!-- Quick Links -->
       <div class="footer-section" >
           <h3>Quick Links</h3>
           <ul>
@@ -648,7 +642,6 @@ html, body {
           </ul>
       </div>
 
-      <!-- Our Services -->
       <div class="footer-section">
           <h3>Our Services</h3>
           <ul>
@@ -659,7 +652,6 @@ html, body {
           </ul>
       </div>
 
-      <!-- Contact Us -->
       <div class="footer-section">
           <h3>Contact Us</h3>
           <address>
